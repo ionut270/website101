@@ -83,3 +83,66 @@ In interiorul acestui tag vom pune de exemplu un paragraf (`<p>paragraf</p>`) cu
 De aceasta data la deschiderea fisierului in browser vom vedea afisat pe ecram textul `Hello world !`.
 Felicitari  ! Tocmai ati creat prima dumneavoastra pagina web.
 
+Acum insa putem dori ca o portiune a acestui text sa fie **`boldat`**. Pentru acest lucru vom folosi tagul `<b>text</b>`sau daca dorim ca acesta sa fie *`italic`* vom folosi tagul `<i>text</i>`
+Deci 
+
+     <html>
+    	<body>
+    		<p><i>Hello</i> <b>world</b> !</p>
+    	</body>
+    </html>
+
+Acestea sunt taguri de formatare si aveti aici o lista cu acestea cu care puteti experimenta
+
+-   `<b>`  - Text Bold
+-   `<strong>`  - Important text
+-   `<i>`  - Text italic
+-   `<em>`  - Text accentuat
+-   `<mark>`  - Text marcat
+-   `<small>`  - Text mai mic
+-   `<del>`  - Text sters
+-   `<ins>`  - Text inserat
+-   `<sub>`  - Subscript text
+-   `<sup>`  - Superscript text
+
+O lista mai completa cu toate tagurile HTML si explicatii pentru acestea le gasiti [aici]([http://www.competentedigitale.ro/html/taguri.html](http://www.competentedigitale.ro/html/taguri.html)).
+
+### Rezolvam problema 
+
+*- Sa presupunem ca dorim sa creeam o pagina web care sa contina poezii
+Avem asignata cate o poezie pentru fiecare pagina, si deasemenea dorim sa afisam un tabel cu date despre fiecare poezie pe pagina ei
+Deasemenea vom dori ca aceasta pagina web sa contina o sectiune ce va permite navigarea intre poezii,*
+
+Vom pleca de la fisierul nostru de baza
+
+     <html>
+    	<body>
+    		<p><i>Hello</i> <b>world</b> !</p>
+    	</body>
+    </html>
+
+Am ales ca poezie pentru prima pagina [Doina]([https://ro.wikisource.org/wiki/Doina_(variant%C4%83_Alecsandri)) de Vasile Alecsandri
+Incepem prin a pune fiecare rand din poezie intrun `paragraf (<p></p>)`
+
+    <p>Doina, doiniţă!</p>
+    <p>De-aş avea o puiculiţă,</p>
+    <p>Cu flori galbene-n cosiţă,</p>
+    <p>Cu flori roşii pe guriţă!</p>
+    
+   In acest moment am terminat de scris o strofa, si vrem sa lasam un rand liber pentru o formatare corecta a poeziei.
+   Pentru acest lucru putem folosi tagul `<br> </br>` ce poate fi scris si de forma `<br />` 
+   Acesta specifica browserului sa sa lase un rand liber pe pozitia sa. (`a break`)
+
+    <p>Doina, doiniţă!</p>
+    <p>De-aş avea o puiculiţă,</p>
+    <p>Cu flori galbene-n cosiţă,</p>
+    <p>Cu flori roşii pe guriţă!</p>
+    <br  />
+    <p>De-aş avea o mândrulică</p>
+    <p>Cu-ochişori de porumbică</p>
+    <p>Şi cu suflet de voinică!</p>
+    <br  />
+    <p>De-aş avea o bălăioară</p>
+    <p>Naltă, veselă, uşoară,</p>
+    <p>Ca un pui de căprioară!</p>
+
